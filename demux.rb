@@ -5,21 +5,21 @@
 class Demux < Formula
   desc "Terminal multiplexer process manager"
   homepage "https://github.com/rtalexk/demux"
-  version "1.3.0"
+  version "1.4.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rtalexk/demux/releases/download/v1.3.0/demux_darwin_amd64.tar.gz"
-      sha256 "8e3523a9d97cffc392552aac1c42a10e5d5f53acdf389e9bdee0ee269df0818a"
+      url "https://github.com/rtalexk/demux/releases/download/v1.4.0/demux_darwin_amd64.tar.gz"
+      sha256 "57f2f6c0308a34f9510fe319c8459ace6d216191bc34a54c082abf838cea160c"
 
       define_method(:install) do
         bin.install "demux"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rtalexk/demux/releases/download/v1.3.0/demux_darwin_arm64.tar.gz"
-      sha256 "6c3c87bbfcc7385ed86c0495f57d479df32ede1d1978ce0b94386c8cf118abd9"
+      url "https://github.com/rtalexk/demux/releases/download/v1.4.0/demux_darwin_arm64.tar.gz"
+      sha256 "540d2344ba8e27d4be3987eb5646a005cc07d36f9c334bad1ad1b48b320247ca"
 
       define_method(:install) do
         bin.install "demux"
@@ -29,15 +29,15 @@ class Demux < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rtalexk/demux/releases/download/v1.3.0/demux_linux_amd64.tar.gz"
-      sha256 "ff63f95400d7eddca7c2dda9f3f3370369c8685dcc5f54c7c869ac7e0c32dbde"
+      url "https://github.com/rtalexk/demux/releases/download/v1.4.0/demux_linux_amd64.tar.gz"
+      sha256 "846cdc0a49ec46841f1a003b45015752bcad30430a44858af31a31631a97f191"
       define_method(:install) do
         bin.install "demux"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rtalexk/demux/releases/download/v1.3.0/demux_linux_arm64.tar.gz"
-      sha256 "9b3a70c8355ef2e7b27551953634b3aa7f67723600445f2a158f2dd985612d04"
+      url "https://github.com/rtalexk/demux/releases/download/v1.4.0/demux_linux_arm64.tar.gz"
+      sha256 "c0bb02862beeb0ea3557302d94c8c888d1f1d902ee1748eddfe25578b340d460"
       define_method(:install) do
         bin.install "demux"
       end
