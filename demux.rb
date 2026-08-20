@@ -11,7 +11,7 @@ class Demux < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/rtalexk/demux/releases/download/v1.10.0/demux_darwin_amd64.tar.gz"
-      sha256 "9ca87f81e6df2f034d5d77472407940d18b17386c31baa2f12c126a19c296ba4"
+      sha256 "ac353bf2248fb85799aeeb81428788f1a2a84c3e406455765f62b3ae228b0202"
 
       define_method(:install) do
         bin.install "demux"
@@ -19,7 +19,7 @@ class Demux < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/rtalexk/demux/releases/download/v1.10.0/demux_darwin_arm64.tar.gz"
-      sha256 "f4643ab0b0e85f37b64b9557f0e506c571158432e45661ca672073848ce180cd"
+      sha256 "936e81e41e1f70db94ee6de6912875316f258ae296dbaa6b867537ea616b2d6e"
 
       define_method(:install) do
         bin.install "demux"
@@ -30,14 +30,14 @@ class Demux < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/rtalexk/demux/releases/download/v1.10.0/demux_linux_amd64.tar.gz"
-      sha256 "fed5307ecac024ffff34dcf6aecbf406fc0225276e09d3d2064dc62d14d247c5"
+      sha256 "26b52f81044683bbb90ef7ba67cf789fcf5a50fe3a4e5e667d385240ea256049"
       define_method(:install) do
         bin.install "demux"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/rtalexk/demux/releases/download/v1.10.0/demux_linux_arm64.tar.gz"
-      sha256 "3c73e4df4b9d43ebd4bb53851a3169e5beafc2e9ede242b840eff7c749c87a6e"
+      sha256 "4f4bf6e89df1859d1a820f8182839109b78b53b2f1e610530b1a75dec9e12352"
       define_method(:install) do
         bin.install "demux"
       end
